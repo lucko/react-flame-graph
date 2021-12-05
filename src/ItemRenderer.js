@@ -20,6 +20,7 @@ export default class ItemRenderer extends PureComponent<Props, void> {
     const { data: itemData, index, style } = this.props;
 
     const {
+      containerWidth,
       data,
       disableDefaultTooltips,
       focusedNode,
@@ -63,6 +64,7 @@ export default class ItemRenderer extends PureComponent<Props, void> {
         <LabeledRect
           backgroundColor={node.backgroundColor}
           color={node.color}
+          containerWidth={containerWidth}
           disableDefaultTooltips={disableDefaultTooltips}
           height={rowHeight}
           isDimmed={index < focusedNode.depth}

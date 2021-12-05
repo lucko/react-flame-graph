@@ -30,6 +30,7 @@ export type ChartData = {|
 |};
 
 export type ItemData = {|
+  containerWidth: number,
   data: ChartData,
   disableDefaultTooltips: boolean,
   focusedNode: ChartNode,
